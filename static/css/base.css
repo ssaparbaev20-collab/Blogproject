@@ -1,0 +1,121 @@
+/* 1. Umumiy sahifa va chiroyli zamonaviy shriftlar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Saytning tepa qismi (Header) dizayni */
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #eaeaea;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header h1 a {
+    color: #2ca05a; /* Siz xohlagandek chiroyli yashil rang */
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    transition: color 0.3s ease;
+}
+
+header h1 a:hover {
+    color: #1e6b3c; /* Sichqoncha ustiga kelganda to'qroq yashil */
+}
+
+/* 3. Maqolalar (Postlar) joylashadigan asosiy blok */
+div {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Har bitta maqolani chiroyli oq blok (card) ichiga olish */
+div > div {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+div > div:hover {
+    transform: translateY(-3px); /* Ustiga kelganda biroz ko'tariladi */
+}
+
+/* Maqola sarlavhasi */
+div h2 a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+div h2 a:hover {
+    color: #2ca05a; /* Sarlavha ustiga kelganda ham yashil bo'ladi */
+}
+
+/* Maqola matni (Body) */
+div p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-top: 10px;
+}
+/* 4. Alohida maqola sahifasi (Post Detail) dizayni */
+.detail-container {
+    background: #ffffff;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Maqola ichidagi muallif nomi */
+.post-author {
+    font-size: 0.95rem;
+    color: #777777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Maqola ichidagi asosiy katta sarlavha */
+.post-title {
+    font-size: 2.5rem;
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Maqola matni uchun chiroyli va o'qishga qulay stil */
+.post-body {
+    font-size: 1.2rem;
+    color: #444444;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Orqaga qaytish tugmasi */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    color: #2ca05a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+    color: #1e6b3c;
+}
