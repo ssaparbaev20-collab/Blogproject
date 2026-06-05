@@ -1,0 +1,198 @@
+/* 1. Umumiy sahifa va chiroyli zamonaviy shriftlar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Saytning tepa qismi (Header) dizayni */
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #eaeaea;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header h1 a {
+    color: #2ca05a; /* Siz xohlagandek chiroyli yashil rang */
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    transition: color 0.3s ease;
+}
+
+header h1 a:hover {
+    color: #1e6b3c; /* Sichqoncha ustiga kelganda to'qroq yashil */
+}
+
+/* 3. Maqolalar (Postlar) joylashadigan asosiy blok */
+div {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Har bitta maqolani chiroyli oq blok (card) ichiga olish */
+div > div {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+div > div:hover {
+    transform: translateY(-3px); /* Ustiga kelganda biroz ko'tariladi */
+}
+
+/* Maqola sarlavhasi */
+div h2 a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+div h2 a:hover {
+    color: #2ca05a; /* Sarlavha ustiga kelganda ham yashil bo'ladi */
+}
+
+/* Maqola matni (Body) */
+div p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-top: 10px;
+}
+/* 4. Alohida maqola sahifasi (Post Detail) dizayni */
+.detail-container {
+    background: #ffffff;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Maqola ichidagi muallif nomi */
+.post-author {
+    font-size: 0.95rem;
+    color: #777777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Maqola ichidagi asosiy katta sarlavha */
+.post-title {
+    font-size: 2.5rem;
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Maqola matni uchun chiroyli va o'qishga qulay stil */
+.post-body {
+    font-size: 1.2rem;
+    color: #444444;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Orqaga qaytish tugmasi */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    color: #2ca05a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+    color: #1e6b3c;
+}
+
+/* 3. Login sahifasi (Registration) dizayni */
+.login-container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #2ca05a; /* Yuqoridagi yashil rangga moslashtirildi */
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Django form.as_p ichidagi har bir qator (<p>) */
+.login-container form p {
+    display: flex;
+    flex-direction: column; /* Label tepada, Input pastda bo'lishi uchun */
+    margin-bottom: 20px;
+}
+
+/* Label (Username:, Password:) */
+.login-container form p label {
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Barcha inputlar (text, password va barchasi uchun umumiy) */
+.login-container form p input {
+    width: 100% !important; /* Kenglikni to'liq qilish majburlanadi */
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fafafa;
+}
+
+/* Input fokus bo'lganda */
+.login-container form p input:focus {
+    border-color: #2ca05a; /* Yashil rangli fokus */
+    box-shadow: 0 0 6px rgba(44, 160, 90, 0.2);
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Kirish tugmasi */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ca05a; /* To'q yashil */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #227c44;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
