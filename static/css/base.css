@@ -119,3 +119,80 @@ div p {
 .back-btn:hover {
     color: #1e6b3c;
 }
+
+/* 3. Login sahifasi (Registration) dizayni */
+.login-container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #2ca05a; /* Yuqoridagi yashil rangga moslashtirildi */
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Django form.as_p ichidagi har bir qator (<p>) */
+.login-container form p {
+    display: flex;
+    flex-direction: column; /* Label tepada, Input pastda bo'lishi uchun */
+    margin-bottom: 20px;
+}
+
+/* Label (Username:, Password:) */
+.login-container form p label {
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Barcha inputlar (text, password va barchasi uchun umumiy) */
+.login-container form p input {
+    width: 100% !important; /* Kenglikni to'liq qilish majburlanadi */
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fafafa;
+}
+
+/* Input fokus bo'lganda */
+.login-container form p input:focus {
+    border-color: #2ca05a; /* Yashil rangli fokus */
+    box-shadow: 0 0 6px rgba(44, 160, 90, 0.2);
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Kirish tugmasi */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ca05a; /* To'q yashil */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #227c44;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
